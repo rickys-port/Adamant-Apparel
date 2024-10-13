@@ -1,0 +1,127 @@
+body{
+    /*font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;*/
+    font-family: "Bradley Hand", cursive;
+    font-weight: 100;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+h1{ /* this is only for the title in the left of the header */
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img{
+    margin-top: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    background-color: #121212;
+    align-items: center; /* center vertically */
+    position: sticky;
+    top: 0; /* display on the top always */
+    z-index: 1; /* display in priority, in front of everything else (z axis)*/
+}
+
+.hero{
+    background-color: #1f1f1f; /* lighter black color */
+    background-image: url('blackimage.jpg');
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+#he2{ /* assigning background images */
+    background-image: url('blackimage2.jpg');
+}
+
+#he3{
+    background-image: url('blackimage3.jpg');
+}
+
+#he4{
+    background-image: url('blackimage.jpg');
+}
+
+.hero h4 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+/* a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+} */
+
+a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #3d3d3d;
+    padding: 10px;
+    border-radius: 7px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  a span {
+    font-weight: bold;
+  }
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1f1f1f;
+    margin-top: 3rem;
+}
+
+h1 {
+    background: linear-gradient(90deg, #ffffff, #ccc, #999999, #ccc, #ffffff);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rippleEffect 5s infinite linear;
+}
+
+h4{
+    background: linear-gradient(90deg, #ffffff, #ddd, #bbb, #555555, #bbb, #ddd, #ffffff);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rippleEffect 10s infinite linear;
+}
+
+@keyframes rippleEffect {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
